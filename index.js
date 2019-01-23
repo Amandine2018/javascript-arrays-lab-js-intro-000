@@ -16,3 +16,12 @@ function destructivelyRemoveLastKitten() {
 function destructivelyRemoveFirstKitten() {
   kittens.shift();
 }
+
+function appendKitten(name) {
+  var tempArray = [...kittens, name];
+}
+
+function prependKitten(name) {
+  var tempArray = [name, ...kittens];
+  return tempArray;
+}
