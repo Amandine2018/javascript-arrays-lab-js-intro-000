@@ -32,7 +32,7 @@ function removeLastKitten() {
   return tempArray;
 }
 
-removeFirstKitten() {
+function removeFirstKitten() {
   var tempArray = kittens.slice(1);
   return tempArray;
 }
