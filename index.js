@@ -19,9 +19,20 @@ function destructivelyRemoveFirstKitten() {
 
 function appendKitten(name) {
   var tempArray = [...kittens, name];
+  return tempArray;
 }
 
 function prependKitten(name) {
   var tempArray = [name, ...kittens];
+  return tempArray;
+}
+
+function removeLastKitten() {
+  var tempArray = kittens.slice(0, kittens.length-1);
+  return tempArray;
+}
+
+removeFirstKitten() {
+  var tempArray = kittens.slice(1);
   return tempArray;
 }
